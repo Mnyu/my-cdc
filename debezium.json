@@ -19,7 +19,7 @@
     "transforms.ExtractField.field": "id",
     "transforms.Route1.type":"io.debezium.transforms.ContentBasedRouter",
     "transforms.Route1.language":"jsr223.groovy",
-    "transforms.Route1.topic.expression":"value.after != null ? (value.after?.aggregate_type == 'Order' ? 'orders' : null) : (value.before?.aggregate_type == 'Order' ? 'orders' : null)",
+    "transforms.Route1.topic.expression":"value.after != null ? (value.after?.aggregate_type == 'Order' ? 'shipments' : null) : (value.before?.aggregate_type == 'Order' ? 'shipments' : null)",
     "transforms.Route2.type":"io.debezium.transforms.ContentBasedRouter",
     "transforms.Route2.language":"jsr223.groovy",
     "transforms.Route2.topic.expression":"value.after != null ? (value.after?.aggregate_type == 'Customer' ? 'invoices' : null) : (value.before?.aggregate_type == 'Customer' ? 'invoices' : null)",

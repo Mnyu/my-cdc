@@ -44,8 +44,7 @@ curl -i -X DELETE localhost:8083/connectors/pg-connector/
       curl -so groovy-jsr223-4.0.9.jar  https://repo1.maven.org/maven2/org/apache/groovy/groovy-jsr223/4.0.9/groovy-jsr223-4.0.9.jar
       ```
    ```shell
-    chmod 444 groovy-*
-    chmod 444 debezium-scripting-2.7.1.Final.jar
+    chmod 444 groovy-jsr223-4.0.9.jar groovy-4.0.9.jar debezium-scripting-2.7.1.Final.jar
    ```
    <br></br>
 6. Debezium notifications
