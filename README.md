@@ -8,7 +8,8 @@
    docker-compose --env-file .env up -d
    ```
    Verify if all the containers are running.<br>
-   Apache Kafka UI : http://localhost:8080/ <br>
+   Apache Kafka UI : http://localhost:8080/ 
+   <br>
 2. ```shell
    docker exec -it debezium-cdc bash
    cd connect/debezium-connector-postgres/
