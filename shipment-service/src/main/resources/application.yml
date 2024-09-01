@@ -1,0 +1,14 @@
+server:
+  port: 8383
+spring:
+  application:
+    name: shipment-service
+  kafka:
+    consumer:
+      group-id: shipment-group-1
+      auto-offset-reset: earliest
+      bootstrap-servers: localhost:29092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+
