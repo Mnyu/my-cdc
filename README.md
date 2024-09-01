@@ -3,14 +3,16 @@
 ## POSTGRES + KAFKA + DEBEZIUM
 
 ### STEPS TO RUN THE APP
-1. 
+1. Start all containers
    ```shell
    docker-compose --env-file .env up -d
    ```
    Verify if all the containers are running.<br>
    Apache Kafka UI : http://localhost:8080/ 
    <br>
-2. ```shell
+   <br>
+2. Configure Debezium
+   ```shell
    docker exec -it debezium-cdc bash
    cd connect/debezium-connector-postgres/
    curl -so debezium-scripting-2.7.1.Final.jar https://repo1.maven.org/maven2/io/debezium/debezium-scripting/2.7.1.Final/debezium-scripting-2.7.1.Final.jar
